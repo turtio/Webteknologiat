@@ -2,6 +2,13 @@
 *{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+body{
+    width: 60%;
+    min-width: 15em;
+    margin: auto;
+}
+
 form{
     background-color: #cce6ff;
 }
@@ -28,17 +35,48 @@ input:focus, textarea:focus{
 input[type=submit]{
     border-color: black;
 }
+
+input[type=file]{
+    width: 6.8em;
+    overflow: hidden;
+}
 label.label{
     color: #00264d;
 }
-input[type=text], input[type=email], input[type=tel], textarea{
-    width: 100%;
-}
+
 td{
     padding-left: 5px;
     padding-right: 5px;
 }
 
+textarea{
+    height: 150px;
+    resize: none;
+    min-width: 7em;
+}
+
 #Sendbutton{
     float: right;
+}
+
+fieldset.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.input-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+label{
+    min-width: 6em;
 }
